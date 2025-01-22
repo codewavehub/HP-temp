@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackPrix S2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#0a0a0a] text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-blue/80 backdrop-blur-md">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold space-font">
+                    CodeWave Hub <span class="text-blue-500"></span>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="hover:text-blue-500 transition">Home</a>
+                    <a href="#about" class="hover:text-blue-500 transition">About</a>
+                    <a href="#tracks" class="hover:text-blue-500 transition">Tracks</a>
+                    <a href="#schedule" class="hover:text-blue-500 transition">Schedule</a>
+                    <a href="#sponsors" class="hover:text-blue-500 transition">Sponsors</a>
+                    <a href="#faq" class="hover:text-blue-500 transition">FAQ</a>
+                </div>
+                <button id="register-btn" class="bg-blue-600 px-6 py-2 rounded-full hover:bg-blue-700 transition">
+                    Register Now
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h1 class="text-5xl md:text-7xl font-bold space-font mb-6">
+                        HackPrix <span class="text-blue-500">Season 2</span>
+                    </h1>
+                    <p class="text-xl mb-8 text-gray-300">
+                        Welcome to HackPrix Hackathon Season 2, presented by CodeWave Hub. HackPrix empowers individuals and fosters creativity, innovation, and collaboration. 
+                        <br>
+                        Join us to showcase your talents, learn from experts, and connect with a community of innovators
+                    </p>
+                    <!--
+                    
+                    <div id="countdown" class="grid grid-cols-4 gap-4 max-w-md mb-8">
+                        <div class="text-center p-3 bg-blue-900/50 rounded-lg">
+                            <div id="days" class="text-3xl font-bold">00</div>
+                            <div class="text-sm">Days</div>
+                        </div>
+                        <div class="text-center p-3 bg-blue-900/50 rounded-lg">
+                            <div id="hours" class="text-3xl font-bold">00</div>
+                            <div class="text-sm">Hours</div>
+                        </div>
+                        <div class="text-center p-3 bg-blue-900/50 rounded-lg">
+                            <div id="minutes" class="text-3xl font-bold">00</div>
+                            <div class="text-sm">Minutes</div>
+                        </div>
+                        <div class="text-center p-3 bg-blue-900/50 rounded-lg">
+                            <div id="seconds" class="text-3xl font-bold">00</div>
+                            <div class="text-sm">Seconds</div>
+                        </div>
+                    </div>
+                    -->
+                 <!--
+                       <button onclick="openRegistration()" class="bg-blue-600 px-8 py-3 rounded-full text-lg hover:bg-blue-700 transition">
+                        Register for HackPrix 2025
+                    </button>
+                    -->
+                </div>
+                <div class="slideshow-container">
+                    <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--
+  
+    <section id="tracks" class="py-20 bg-gradient-to-b from-black to-blue-900/20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold space-font text-center mb-12">Hackathon Tracks</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-black/50 p-6 rounded-xl hover:transform hover:-translate-y-2 transition duration-300">
+                    <i class="bi bi-robot text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">AI/ML</h3>
+                    <p class="text-gray-300">Build innovative solutions using artificial intelligence and machine learning.</p>
+                </div>
+                <div class="bg-black/50 p-6 rounded-xl hover:transform hover:-translate-y-2 transition duration-300">
+                    <i class="bi bi-currency-bitcoin text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Web3/Blockchain</h3>
+                    <p class="text-gray-300">Create decentralized applications and explore blockchain technology.</p>
+                </div>
+                <div class="bg-black/50 p-6 rounded-xl hover:transform hover:-translate-y-2 transition duration-300">
+                    <i class="bi bi-phone text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Mobile Development</h3>
+                    <p class="text-gray-300">Develop innovative mobile applications for iOS and Android platforms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold space-grotesk text-center mb-12">About HackPrix 2025</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <i class="bi bi-calendar-event text-4xl text-indigo-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">June 7-8, 2025</h3>
+                    <p class="text-gray-600">36 hours of non-stop innovation and coding</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <i class="bi bi-geo-alt text-4xl text-indigo-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">LIET, Hyderabad</h3>
+                    <p class="text-gray-600">Lords Institute of Engineering & Technology</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <i class="bi bi-trophy text-4xl text-indigo-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">₹1,00,000</h3>
+                    <p class="text-gray-600">In prizes and opportunities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+            
+                 <!-- Event Schedule Section 
+                  <section id="schedule" class="py-20">
+                    <div class="container mx-auto px-4">
+                         <h2 class="text-3xl font-bold space-grotesk text-center mb-12">Event Schedule</h2>
+                          <div class="max-w-3xl mx-auto">
+                                    <div class="relative">
+                                         <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-indigo-200"></div>
+                                         <div class="space-y-8">
+
+                                            -->
+                    <!-- Day 1 
+                    <div class="relative">
+                        <div class="ml-6 md:ml-0 md:flex md:items-center">
+                            <div class="md:w-1/2 md:pr-8 text-right hidden md:block">
+                                <h3 class="font-semibold">Opening Ceremony</h3>
+                                <p class="text-gray-600">9:00 AM - 10:00 AM</p>
+                                <p class="text-gray-600">Location: Auditorium</p>
+                            </div>
+                            <div class="absolute left-0 md:left-1/2 transform -translate-x-4 md:-translate-x-1/2">
+                                <div class="w-8 h-8 rounded-full bg-indigo-600 flex items-center justify-center">
+                                    <i class="bi bi-1-circle-fill text-white"></i>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="ml-6 md:ml-0 md:flex md:items-center">
+                            <div class="md:w-1/2 md:pr-8 text-right hidden md:block">
+                                <h3 class="font-semibold">Lunch Break</h3>
+                                <p class="text-gray-600">12:00 PM - 1:00 PM</p>
+                                <p class="text-gray-600">Location: Cafeteria</p>
+                            </div>
+                            <div class="absolute left-0 md:left-1/2 transform -translate-x-4 md:-translate-x-1/2">
+                                <div class="w-8 h-8 rounded-full bg-indigo-600 flex items-center justify-center">
+                                    <i class="bi bi-2-circle-fill text-white"></i>
+                                </div>
+                            </div>
+                            <div class="relative md:w-1/2 md:pl-8 md:text-left">
+                                <h3 class="font-semibold md:hidden">Workshop: AI/ML</h3>
+                                <p class="text-gray-600 md:hidden">10:00 AM - 12:00 PM</p>
+                                <p class="text-gray-600">Enjoy a delicious meal hackers</p>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+       -->     
+
+    <!-- Sponsors Section 
+    <section id="sponsors" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold space-grotesk text-center mb-12">Our Sponsors</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-sm flex items-center justify-center">
+                    <img src="https://shorturl.at/EouGS" alt="Sponsor Logo" class="h-16">
+                </div>
+                 More sponsor logos... 
+            </div>
+        </div>
+    </section>
+-->
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold space-grotesk text-center mb-12">Frequently Asked Questions</h2>
+            <div class="max-w-3xl mx-auto space-y-4" id="faqContainer">
+                <!-- FAQs will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+                <!-- Messages will appear here 
+            </div>
+            <div class="p-4 border-t">
+                <div class="flex gap-2">
+                    <input type="text" id="userInput" class="flex-1 border rounded-lg px-4 py-2" placeholder="Type your question...">
+                    <button onclick="sendMessage()" class="bg-indigo-600 text-white px-4 py-2 rounded-lg">
+                        <i class="bi bi-send"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+    <!-- Chat Bot Toggle 
+    <button onclick="toggleChat()" class="fixed bottom-6 right-6 bg-indigo-600 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center hover:bg-indigo-700 transition">
+        <i class="bi bi-chat-dots text-2xl"></i>
+    </button>
+-->
+    <script src="script.js"></script>
+</body>
+</html>

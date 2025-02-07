@@ -50,10 +50,6 @@ const faqs = [
         answer:"For assistance, reach out to us at Discord or email us at."
     },
     {
-        question:"What are the prizes?",
-        answer:"The top 3 teams will win cash prizes worth ₹1,00,000. There are also exciting opportunities for the winners."
-    },
-    {
         question:"Will food & stay be provided?",
         answer:"We've got lots of food and snacks for everyone, stay hacky and hydrated.Rooms for resting/sleeping will be arranged at the Campus (separately for opposite genders)."
     }
